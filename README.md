@@ -8,7 +8,7 @@
 </h1>
 <hr />
 
-Existen dos maneras de ver el arbol una es con herramientas de antrl4 y ota con python:
+Existen dos maneras de ver el arbol una es con herramientas de antrl4 y otra con python:
 
 ## Con antlr4
 1. `antlr -o lib YAPL.g4`
