@@ -8,6 +8,9 @@
 </h1>
 <hr />
 
+Existen dos maneras de ver el arbol una es con herramientas de antrl4 y ota con python:
+
+## Con antlr4
 1. `antlr -o lib YAPL.g4`
    * Se generaran los archivos relacionados al **lexer** y **parser** de antlr4.
    
@@ -21,3 +24,13 @@
   
 4. `grun YAPL program ../test/nombredelarchivo.cl`
    * Probar sin interfaz grafica 
+  
+5. `grun YAPL program -tree ../test/nombredelarchivo.cl`
+   * Generar arbol en consola
+
+## Con python
+1. `antlr -Dlanguage=Python3 -o YAPL -visitor YAPL.g4`
+   * Generar en python
+
+2. `python main.py`
+   * Correr main
